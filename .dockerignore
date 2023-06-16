@@ -1,0 +1,6 @@
+.gitignore
+/.git*
+/docker-bake.hcl
+/Dockerfile.*
+/*.md
+/LICENSE
