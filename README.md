@@ -1,5 +1,5 @@
 <p align="center">
-    <img src="https://img.shields.io/packagist/v/vedatunlu/php-fpm-image">
+    <img src="https://img.shields.io/github/v/tag/vedatunlu/php-fpm-image">
     <img src="https://img.shields.io/github/repo-size/vedatunlu/php-fpm-image">
     <img src="https://img.shields.io/github/last-commit/vedatunlu/php-fpm-image">
     <img src="https://img.shields.io/github/release-date/vedatunlu/php-fpm-image">
