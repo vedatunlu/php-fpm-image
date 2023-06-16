@@ -21,7 +21,7 @@ Place the code below on top of your Dockerfile
 
 ### 2. Add configs and copy your project to the container that will be created
 
-Place your configuration files to your project. As an example I placed my own configuration files inside "./deploy"
+Place your configuration files to your project. For example I placed my own configuration files inside "./deploy"
 folder.
 
 Copy your configuration files to the inside of the container that will be created after running Dockerfile.
