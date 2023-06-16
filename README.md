@@ -21,10 +21,8 @@ Place the code below on top of your Dockerfile
 
 ### 2. Add configs and copy your project to the container that will be created
 
-Place your configuration files to your project. For example I placed my own configuration files inside "./deploy"
-folder.
-
-Copy your configuration files to the inside of the container that will be created after running Dockerfile.
+Image has default configurations but you are free to use your own config files. Place your configuration files to your project. For example I placed my own configuration files inside "./deploy"
+folder and copy your configuration files to the container that will be created after running Dockerfile.
 
 ```
   COPY ./deploy/php/php-fpm.ini /usr/local/etc/php/php-99.ini
@@ -50,7 +48,7 @@ Copy your configuration files to the inside of the container that will be create
 You can create a sh script file and add it to the entrypoint of the container if you have any command that has to run
 after container created.
 
-For example ./deploy/entrypoint.sh file to run necessary command and added it to at bottom of the Dockerfile
+For example; create ./deploy/entrypoint.sh file to run necessary command and added it to at bottom of the Dockerfile
 
 ```
   ENTRYPOINT [ "/entrypoint.sh" ]
