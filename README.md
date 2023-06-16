@@ -15,7 +15,7 @@ your application needs.
 
 Place the code below on top of your Dockerfile
 
-```http
+```
   FROM ghcr.io/vedatunlu/php-fpm-image:latest
 ```
 
@@ -26,7 +26,7 @@ folder.
 
 Copy your configuration files to the inside of the container that will be created after running Dockerfile.
 
-```http
+```
   COPY ./deploy/php/php-fpm.ini /usr/local/etc/php/php-99.ini
   COPY ./deploy/php/php-fpm.conf /usr/local/etc/php-fpm.d/www.conf
   COPY ./deploy/nginx/nginx.conf /etc/nginx/nginx.conf
@@ -52,7 +52,7 @@ after container created.
 
 For example ./deploy/entrypoint.sh file to run necessary command and added it to at bottom of the Dockerfile
 
-```http
+```
   ENTRYPOINT [ "/entrypoint.sh" ]
 ```
 
@@ -76,7 +76,7 @@ You can now get response from http://localhost:8000
 
 ### Review of Docker file
 
-```http
+```
 FROM ghcr.io/vedatunlu/php-fpm-image:latest
 
 COPY ./deploy/php/php-fpm.ini /usr/local/etc/php/php-99.ini
